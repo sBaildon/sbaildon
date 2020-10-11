@@ -1,40 +1,34 @@
-@import "include-media";
-
+@import "normalize";
 @import "imports/colours";
 @import "imports/mixins";
 
 @font-face {
-    font-family: akkurat-mono;
-    src: url(../fonts/akkurat-mono.woff);
-}
-
-@font-face {
 	font-family: larish;
-	src: url(../fonts/larishneue-webfont.woff);
+	src: url(../fonts/larishneue.woff);
 }
 
 html {
 	font-family: "larish";
-	color: $colour--body;
 	background-color: $colour--background;
-
-	font-size: 3em;
-
-	@include media("landscape") {
-		font-size: 2em;
-	}
-
-	@include media(">=desktop") {
-		font-size: 2.0em;
-	}
+	color: $colour--body;
+	font-size: 2.3rem;
 }
 
-main {
+body {
 	margin: 2em;
+}
 
-	@include media(">=desktop") {
-		margin: 4.5em 0 0 4.5em;
-	}
+header {
+	margin-bottom: 1.5em;
+}
+
+aside {
+	margin-bottom: 0.8em;
+	font-size: 0.9em;
+}
+
+nav {
+	font-size: 0.9em;
 }
 
 a {
